@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<map>
+		<rows width="15" height="10">                     <!--   N    -->
+			<row>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</row>        <!-- W   E  -->
+			<row>2,1,3,1,1,1,3,1,1,2,2,2,1,2,2</row>        <!--   S    -->
+			<row>2,1,2,1,1,1,1,1,1,1,1,1,1,2,2</row>
+			<row>2,1,2,1,1,1,2,2,1,2,2,2,1,3,2</row>
+			<row>2,1,2,2,2,2,2,1,1,2,2,2,1,2,2</row>
+			<row>2,1,1,1,1,1,1,1,1,2,1,1,1,2,2</row>
+			<row>2,2,1,1,1,1,3,1,1,2,2,2,2,2,2</row>
+			<row>2,1,1,2,1,1,1,1,1,2,2,2,3,2,2</row>
+			<row>2,1,1,3,1,1,1,1,1,1,3,1,1,1,2</row>
+			<row>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</row>
+		</rows>
+
+    <tiles>
+      <tile mapIndex="1" tileset="test" setIndex="1" />
+      <tile mapIndex="2" tileset="test" setIndex="2" />
+      <tile mapIndex="3" tileset="test" setIndex="3" />
+    </tiles>
+	</map>
+  
+  <actors>
+    <actor type="trailmarch.actors.PlayerActor" pos="1,1" dir="east" />
+    <actor type="trailmarch.actors.MobActor" pos="5,1" dir="east">
+      <name>goblin</name>
+    </actor>
+    <actor type="trailmarch.actors.MobActor" pos="3,5" dir="north">
+      <name>cyclop</name>
+    </actor>
+    <!--<actor type="trailmarch.actors.MobActor" pos="2,8" dir="north">
+      <name>cyclop</name>
+    </actor>-->
+  </actors>
+
+  <triggers>
+  </triggers>
+</level>

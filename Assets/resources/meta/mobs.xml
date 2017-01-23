@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mobs>
+	<mob prefab="mobs/Goblin" name="goblin">
+    <offset>0.5f,0.1f,0.5f</offset>
+    <ai>chaser</ai>
+		<hp>30</hp>
+    <damage>
+      <slash>2-4</slash>
+    </damage>
+    <armor>
+      <spiritual>10</spiritual>
+      <elemental>40</elemental>
+      <corporeal>120</corporeal>
+    </armor>
+
+    <actions>
+      <action type="attack" cooldown="2" />
+      <action type="move" cooldown="3" />
+      <action type="turn" cooldown="2.1" />
+      <action type="spawn" cooldown="5" />
+    </actions>
+		
+		<animations>
+			<animation name="attack1" type="attack" />
+			<animation name="attack2" type="attack" />
+			<animation name="attack3" type="attack" />
+			<animation name="idle" type="idle" wrap="loop" />
+			<animation name="block" type="block" />
+      <animation name="walk" type="walk" wrap="loop" />
+			<animation name="death" type="death" />
+		</animations>
+	</mob>
+  
+  <mob prefab="mobs/Cyclop" name="cyclop">
+    <offset>0.5f,0.1f,0.5f</offset>
+    <ai>chaser</ai>
+    <hp>60</hp>
+    <damage>
+      <slash>4-10</slash>
+    </damage>
+    <armor>
+      <spiritual>0</spiritual>
+      <elemental>66</elemental>
+      <corporeal>220</corporeal>
+    </armor>
+
+    <actions>
+      <action type="attack" cooldown="3" />
+      <action type="move" cooldown="4.25" />
+      <action type="turn" cooldown="2.1" />
+      <action type="spawn" cooldown="5" />
+    </actions>
+
+    <animations>
+      <animation name="attack_1" type="attack" />
+      <animation name="attack_2" type="attack" />
+      <animation name="hit" type="pain" />
+      <animation name="idle" type="idle" wrap="loop" />
+      <animation name="walk" type="walk" wrap="loop" />
+      <animation name="death" type="death" />
+    </animations>
+  </mob>
+</mobs>

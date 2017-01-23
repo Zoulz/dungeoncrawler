@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tiles>
+  <!-- TEST TILESET -->
+  <tileset name="test">
+    <tile index="1" prefab="tiles/test/Tile1" />
+    <tile index="2" prefab="tiles/test/Tile2">
+      <blocking />
+    </tile>
+    <tile index="3" prefab="tiles/test/Tile3">
+      <facing dir="north" />
+    </tile>
+  </tileset>
+
+  <!-- TEST 2 TILESET -->
+  <tileset name="test2">
+    <tile index="1" prefab="tiles/test2/TestTile1" />
+  </tileset>
+</tiles>
